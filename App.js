@@ -24,7 +24,7 @@ import HomeScreen from './screens/HomeScreen';
 function App() {
   return (
     <Provider store={store}>
-      <View style={styles.sectionContainer}>
+      <View>
         <HomeScreen />
       </View>
     </Provider>
