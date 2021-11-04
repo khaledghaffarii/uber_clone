@@ -19,13 +19,13 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import {store} from './store.js';
-
+import HomeScreen from './screens/HomeScreen';
 
 function App() {
   return (
     <Provider store={store}>
       <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}> Lets Build our App gyes!!!</Text>
+        <HomeScreen />
       </View>
     </Provider>
   );
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
+    flex: 1,
   },
   sectionTitle: {
     fontSize: 24,
