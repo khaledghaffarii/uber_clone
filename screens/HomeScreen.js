@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-
+import tw from 'tailwind-react-native-classnames';
 const HomeScreen = () => {
   return (
-    <View >
-      <Text>I'm a home screen</Text>
+    <View style={tw`bg-white h-full`}>
+      <Text style={tw`text-red-500 p-10`}>I'm a home screen</Text>
     </View>
   );
 };
