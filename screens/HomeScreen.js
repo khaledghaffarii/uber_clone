@@ -1,10 +1,17 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 import tw from 'tailwind-react-native-classnames';
 const HomeScreen = () => {
   return (
     <View style={tw`bg-white h-full`}>
-      <Text style={tw`text-red-500 p-10`}>I'm a home screen</Text>
+      <View style={tw`p-5`}>
+        <Image
+          style={{width: 100, height: 100, resizeMode: 'contain'}}
+          source={{
+            uri: 'https://links.papareact.com/gzs',
+          }}
+        />
+      </View>
     </View>
   );
 };
