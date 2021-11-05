@@ -1,4 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
+import {useNavigation} from '@react-navigation/core';
 import React from 'react';
 import {View, Text, FlatList, TouchableOpacity, Image} from 'react-native';
 import {Icon} from 'react-native-elements';
